@@ -7,12 +7,10 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file kronos_linux_trabalho_EXECUTADO\ \(1\)/kronos_linux_trabalho_EXECUTADO/Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build ./kronos_linux_trabalho_EXECUTADO\ \(1\)/kronos_linux_trabalho_EXECUTADO --file kronos_linux_trabalho_EXECUTADO\ \(1\)/kronos_linux_trabalho_EXECUTADO/Dockerfile --tag my-image-name:$(date +%s)
